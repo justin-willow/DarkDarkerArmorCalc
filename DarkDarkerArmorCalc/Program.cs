@@ -1,17 +1,29 @@
 ﻿using Newtonsoft.Json;
+using System.Reflection;
 using Spectre.Console;
+using System.Text;
 
 using DarkDarkerArmorCalc;
 
+string assemblyLocation = Assembly.GetExecutingAssembly().Location;
+string? assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
 
-var armorJson = File.ReadAllText(@"D:\CODE\DarkDarkerArmorCalc\DarkDarkerArmorCalc\armors.json");
+if (string.IsNullOrEmpty(assemblyDirectory))
+    throw new ApplicationException("unable to detemine assembly directory");
+
+var armorJson = File.ReadAllText(Path.Join(assemblyDirectory, "armors.json"));
 var armorList = JsonConvert.DeserializeObject<List<Armor>>(armorJson);
 
-var characterJson = File.ReadAllText(@"D:\CODE\DarkDarkerArmorCalc\DarkDarkerArmorCalc\characters.json");
+var characterJson = File.ReadAllText(Path.Join(assemblyDirectory, "characters.json"));
 var characterList = JsonConvert.DeserializeObject<List<Character>>(characterJson);
 
+if (armorList is null)
+    throw new ApplicationException("unable to find armor.json source");
 
-List<ArmorCombo> validCombos = new List<ArmorCombo>();
+if (characterList is null)
+    throw new ApplicationException("unable to find characters.json source");
+
+List<ArmorCombo> validCombos = new();
 
 var permutations =  from head in armorList.Where(armor => armor.Slot == ArmorSlot.HEAD)
                     from chest in armorList.Where(armor => armor.Slot == ArmorSlot.CHEST)
@@ -25,7 +37,7 @@ foreach (var character in characterList)
     foreach (var (head, chest, hand, legs, feet) in permutations)
     {
         var set = new List<Armor>() { head, chest, hand, legs, feet };
-        ArmorCombo combo = new ArmorCombo(set, character);
+        ArmorCombo combo = new(set, character);
         validCombos.Add(combo);
     }
 }
@@ -35,7 +47,7 @@ bool shouldContinue = true;
 while (shouldContinue)
 {
     Console.Write("Enter minimum move speed: ");
-    double.TryParse(Console.ReadLine(), out double minimumMoveSpeed);
+    _ = double.TryParse(Console.ReadLine(), out double minimumMoveSpeed);
 
     IEnumerable<Armor> distinctArmorList = validCombos
         .Select(combo => combo.Armor)
@@ -54,25 +66,21 @@ while (shouldContinue)
         double finalMoveSpeed = combo.CalculateFinalMoveSpeed(distinctArmorList);
         string finalActionSpeed = combo.CalculateFinalActionSpeed(distinctArmorList);
 
-        List<string> armorNames = combo.Armors.Select(armor => armor.Name).ToList();
-        string armorNamesString = string.Join(", ", armorNames);
-
-        var table = new Table();
-        table.Border(TableBorder.Rounded);
-        table.AddColumn("[bold]Armor Combo[/]");
-        table.AddColumn("[bold]Character[/]");
-        table.AddColumn("[bold]Total Agility[/]");
-        table.AddColumn("[bold]Total Strength[/]");
-        table.AddColumn("[bold]Total Will[/]");
-        table.AddColumn("[bold]Total Knowledge[/]");
-        table.AddColumn("[bold]Total Resourcefulness[/]");
-        table.AddColumn("[bold]Total Armor Rating[/]");
-        table.AddColumn("[bold]Total Magic Resistance[/]");
-        table.AddColumn("[bold]Final Action Speed[/]");
-        table.AddColumn("[bold]Final Move Speed[/]");
+        var table = new Table().Border(TableBorder.Rounded)
+            .AddColumn("[bold]Armor Combo[/]", (config) => config.NoWrap = true)
+            .AddColumn("[bold]Character[/]")
+            .AddColumn("[bold]Total Agility[/]")
+            .AddColumn("[bold]Total Strength[/]")
+            .AddColumn("[bold]Total Will[/]")
+            .AddColumn("[bold]Total Knowledge[/]")
+            .AddColumn("[bold]Total Resourcefulness[/]")
+            .AddColumn("[bold]Total Armor Rating[/]")
+            .AddColumn("[bold]Total Magic Resistance[/]")
+            .AddColumn("[bold]Final Action Speed[/]")
+            .AddColumn("[bold]Final Move Speed[/]");
 
         table.AddRow(
-            new Markup($"[deepskyblue2]{armorNamesString}[/]"),
+            new Markup($"[deepskyblue2]{BuildArmorComboString(combo)}[/]"),
             new Markup($"[wheat1]{combo.Character.Name}[/]"),
             new Markup($"[green]{combo.TotalAgility}[/]"),
             new Markup($"[green]{combo.TotalStrength}[/]"),
@@ -88,4 +96,13 @@ while (shouldContinue)
         AnsiConsole.Write(table);
     }
     shouldContinue = UserInteraction.ContinueChecker();
+}
+
+static string BuildArmorComboString(ArmorCombo combo)
+{
+    StringBuilder sb = new(500);
+    var armorNames = combo.Armors.Select(a => $"{a.Slot} - {a.Name}");
+    foreach (var name in armorNames)
+        sb.AppendLine(name);
+    return sb.ToString();
 }
