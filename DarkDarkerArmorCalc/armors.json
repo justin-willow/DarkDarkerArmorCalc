@@ -1,0 +1,470 @@
+[
+  {
+    "name": "No Head Armor",
+    "slot": "HEAD",
+    "junkStats": {
+      "armorRating": 0,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "No Chest Armor",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 0,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "No Hands Armor",
+    "slot": "HANDS",
+    "junkStats": {
+      "armorRating": 0,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "No Legs Armor",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 0,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "No Feet Armor",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 0,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Adventurer Boots",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 6,
+      "movementSpeed": 5,
+      "magicResistance": 5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Cloth Pants",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Frock",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -5,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Gloves",
+    "slot": "HANDS",
+    "junkStats": {
+      "armorRating": 3,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Shadow Hood",
+    "slot": "HEAD",
+    "junkStats": {
+      "armorRating": 16,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 1,
+      "resourcefulness": 0,
+      "headshotReduction": 0.06
+    }
+  },
+  {
+    "name": "Heavy Boots",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": 5,
+      "magicResistance": 5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Heavy Leather Leggings",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -8,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Laced Turnshoe",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 5,
+      "movementSpeed": 3,
+      "magicResistance": 5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Leggings",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Lightfoot Boots",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 5,
+      "movementSpeed": 6,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Loose Trousers",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 5,
+      "movementSpeed": -3,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Marauder Outfit",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 28,
+      "movementSpeed": -10,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Mystic Vestments",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 24,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 1,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Old Shoes",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 2,
+      "movementSpeed": 3,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Oracle Robe",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 21,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 1,
+      "knowledge": 1,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Padded Leggings",
+    "slot": "LEGS",
+    "junkStats": {
+      "armorRating": 12,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 1,
+      "knowledge": 1,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Padded Tunic",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Regal Gambeson",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 35,
+      "movementSpeed": -10,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Reinforced Gloves",
+    "slot": "HANDS",
+    "junkStats": {
+      "armorRating": 6,
+      "movementSpeed": 0,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Riveted Gloves",
+    "slot": "HANDS",
+    "junkStats": {
+      "armorRating": 6,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 1,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Rugged Boots",
+    "slot": "FEET",
+    "junkStats": {
+      "armorRating": 6,
+      "movementSpeed": 5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Warden Outfit",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 30,
+      "movementSpeed": -10,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Adventurer Tunic",
+    "slot": "CHEST",
+    "junkStats": {
+      "armorRating": 14,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Occultist Robe",
+    "slot": "CHEST",
+    "allowedClasses": [ "Warlock" ],
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -5,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  },
+  {
+    "name": "Occultist Tunic",
+    "slot": "CHEST",
+    "allowedClasses": [ "Warlock" ],
+    "junkStats": {
+      "armorRating": 35,
+      "movementSpeed": -15,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0
+    }
+  }
+  //{
+  //  "name": "Shadow Mask",
+  //  "slot": "HEAD",
+  //  "allowedClasses": [ "Rogue", "Warlock" ],
+  //  "junkStats": {
+  //    "armorRating": 8,
+  //    "movementSpeed": 0,
+  //    "magicResistance": 0,
+  //    "agility": 1,
+  //    "will": 1,
+  //    "knowledge": 1,
+  //    "strength": 1,
+  //    "resourcefulness": 1,
+  //    "headshotReduction": 0.0
+  //  }
+  //}
+]

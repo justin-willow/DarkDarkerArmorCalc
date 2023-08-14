@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6aGo5z3mVh7SrvBI1XDqqKybRYoTvgj1i/8VBQ1fQhzGDcA7rVc+88bdmRpoyb2no2twpgR2cXmuhrH0cUZRWA==",
+  "success": true,
+  "projectFilePath": "D:\\CODE\\DarkDarkerArmorCalc\\DarkDarkerArmorCalc\\DarkDarkerArmorCalc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Justi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Justi\\.nuget\\packages\\spectre.console\\0.47.0\\spectre.console.0.47.0.nupkg.sha512",
+    "C:\\Users\\Justi\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
