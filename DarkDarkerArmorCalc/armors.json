@@ -450,21 +450,21 @@
       "resourcefulness": 0,
       "headshotReduction": 0.0
     }
+  },
+  {
+    "name": "Shadow Mask",
+    "slot": "HEAD",
+    "allowedClasses": [ "Rogue", "Warlock" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": 0,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 1,
+      "knowledge": 1,
+      "strength": 1,
+      "resourcefulness": 1,
+      "headshotReduction": 0.0
+    }
   }
-  //{
-  //  "name": "Shadow Mask",
-  //  "slot": "HEAD",
-  //  "allowedClasses": [ "Rogue", "Warlock" ],
-  //  "junkStats": {
-  //    "armorRating": 8,
-  //    "movementSpeed": 0,
-  //    "magicResistance": 0,
-  //    "agility": 1,
-  //    "will": 1,
-  //    "knowledge": 1,
-  //    "strength": 1,
-  //    "resourcefulness": 1,
-  //    "headshotReduction": 0.0
-  //  }
-  //}
 ]
