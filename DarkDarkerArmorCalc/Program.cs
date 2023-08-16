@@ -25,12 +25,20 @@ if (characterList is null)
 
 List<ArmorCombo> validCombos = new();
 
-var permutations =  from head in armorList.Where(armor => armor.Slot == ArmorSlot.HEAD)
-                    from chest in armorList.Where(armor => armor.Slot == ArmorSlot.CHEST)
-                    from hand in armorList.Where(armor => armor.Slot == ArmorSlot.HANDS)
-                    from legs in armorList.Where(armor => armor.Slot == ArmorSlot.LEGS)
-                    from feet in armorList.Where(armor => armor.Slot == ArmorSlot.FEET)
-                    select new Tuple<Armor, Armor, Armor, Armor, Armor>(head, chest, hand, legs, feet);
+
+
+Console.Write("Enter your character class: ");
+string userInput = Console.ReadLine().Trim().ToUpper();
+Enum.TryParse(userInput, out CharClasses userCharClass);
+
+
+var permutations = from head in armorList.Where(armor => armor.Slot == ArmorSlot.HEAD && armor.AllowedClasses.Contains(userCharClass))
+                   from chest in armorList.Where(armor => armor.Slot == ArmorSlot.CHEST && armor.AllowedClasses.Contains(userCharClass))
+                   from hand in armorList.Where(armor => armor.Slot == ArmorSlot.HANDS && armor.AllowedClasses.Contains(userCharClass))
+                   from legs in armorList.Where(armor => armor.Slot == ArmorSlot.LEGS && armor.AllowedClasses.Contains(userCharClass))
+                   from feet in armorList.Where(armor => armor.Slot == ArmorSlot.FEET && armor.AllowedClasses.Contains(userCharClass))
+                   select new Tuple<Armor, Armor, Armor, Armor, Armor>(head, chest, hand, legs, feet);
+
 
 foreach (var character in characterList)
 {
@@ -66,7 +74,7 @@ while (shouldContinue)
         double finalMoveSpeed = combo.CalculateFinalMoveSpeed(distinctArmorList);
         string finalActionSpeed = combo.CalculateFinalActionSpeed(distinctArmorList);
 
-        var table = new Table().Border(TableBorder.Rounded)
+        var table = new Table().Border(TableBorder.AsciiDoubleHead)
             .AddColumn("[bold]Armor Combo[/]", (config) => config.NoWrap = true)
             .AddColumn("[bold]Character[/]")
             .AddColumn("[bold]Total Agility[/]")
