@@ -1,6 +1,7 @@
 [
   {
     "name": "Human",
+    "charclass": "WARLOCK",
     "strength": 13,
     "agility": 14,
     "will": 23,
@@ -9,6 +10,7 @@
   },
   {
     "name": "Elf",
+    "charclass": "WARLOCK",
     "strength": 12,
     "agility": 15,
     "will": 23,
@@ -17,10 +19,20 @@
   },
   {
     "name": "Orc",
+    "charclass": "WARLOCK",
     "strength": 14,
     "agility": 13,
     "will": 23,
     "knowledge": 15,
     "resourcefulness": 10
+  },
+  {
+    "name": "Human",
+    "charclass": "FIGHTER",
+    "strength": 15,
+    "agility": 15,
+    "will": 15,
+    "knowledge": 15,
+    "resourcefulness": 15
   }
 ]

@@ -7,6 +7,7 @@ namespace DarkDarkerArmorCalc;
 public class Character
 {
     public string Name { get; set; }
+    public CharClasses CharClass { get; set; }
     public int Strength { get; set; }
     public int Agility { get; set; }
     public int Will { get; set; }
@@ -14,9 +15,10 @@ public class Character
     public int Resourcefulness { get; set; }
     public int BaseMoveSpeed { get; } = 270;
 
-    public Character(string name, int strength, int agility, int will, int knowledge, int resourcefulness)
+    public Character(string name, CharClasses charClass, int strength, int agility, int will, int knowledge, int resourcefulness)
     {
         this.Name = name;
+        this.CharClass = charClass;
         this.Strength = strength;
         this.Agility = agility;
         this.Will = will;

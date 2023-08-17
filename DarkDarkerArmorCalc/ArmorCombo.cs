@@ -15,6 +15,8 @@ public class ArmorCombo
     public int TotalKnowledge { get; private set; }
     public int TotalResourcefulness { get; private set; }
     public int TotalMoveSpeedPenalty { get; private set; }
+    public double TotalHeadshotReduction { get; private set; }
+    public double TotalProjectileReduction { get; private set; }
 
     public List<Armor> Armors { get; } = new List<Armor>();
 
@@ -115,5 +117,7 @@ public class ArmorCombo
         TotalKnowledge = Armors.Sum(armor => armor.JunkStats.Knowledge) + Character.Knowledge;
         TotalResourcefulness = Armors.Sum(armor => armor.JunkStats.Resourcefulness) + Character.Resourcefulness;
         TotalMoveSpeedPenalty = Armors.Sum(armor => armor.JunkStats.MovementSpeed);
+        TotalHeadshotReduction = Armors.Sum(armor => armor.JunkStats.HeadshotReduction);
+        TotalProjectileReduction = Armors.Sum(armor => armor.JunkStats.ProjectileReduction);
     }
 }
