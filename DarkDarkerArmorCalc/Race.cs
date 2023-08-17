@@ -11,12 +11,16 @@ public class Race
 
     public Race()
     {
-        
     }
 
     public Race(string name, Stats statMod)
     {
         Name = name;
         StatModifier = statMod;
+    }
+
+    public override string ToString()
+    {
+        return Name;
     }
 }

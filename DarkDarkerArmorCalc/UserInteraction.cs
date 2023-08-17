@@ -15,6 +15,12 @@ public class UserInteraction
 
             if (userInput == "y")
             {
+                Console.Clear();
+                var rule = new Rule("[wheat1]Previous results[/]");
+                rule.Style = Style.Parse("red dim");
+                AnsiConsole.Write(rule);
+                rule.Title = "";
+                AnsiConsole.Write(rule);
                 return true;
             }
             else if (userInput == "n")
@@ -27,6 +33,12 @@ public class UserInteraction
     }
     public static CharClass GetValidCharClass()
     {
+        var classes = Enum.GetValues(typeof(CharClass)).Cast<CharClass>().ToList();
+        var panel = new Panel(string.Join("\n", classes));
+        panel.Header = new PanelHeader("DnD Classes");
+        panel.Border = BoxBorder.Ascii;
+        AnsiConsole.Write(panel);
+
         AnsiConsole.Markup("Enter your character class: ");
         while (true)
         {

@@ -6,20 +6,26 @@ namespace DarkDarkerArmorCalc;
 [JsonObject(NamingStrategyType = typeof(CamelCaseNamingStrategy))]
 public class Character
 {
-    public string Name { get; set; }
+    public Race Race { get; set; }
     public CharClass CharClass { get; set; }
     public int BaseMoveSpeed { get; } = 270;
     public Stats BaseStats { get; set; }
-    public Race Race { get; set; }
 
     public Character()
     {
 
     }
 
-    public Character(string name, Race race, Stats stats)
+    public Character(Character character, Race race)
     {
-        Name = name;
+        Race = race;
+        CharClass = character.CharClass;
+        BaseMoveSpeed = character.BaseMoveSpeed;
+        BaseStats = character.BaseStats + Race.StatModifier;
+    }
+
+    public Character(Race race, Stats stats)
+    {
         Race = race;
         BaseStats = stats + Race.StatModifier;
     }

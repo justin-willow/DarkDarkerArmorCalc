@@ -13,7 +13,7 @@ public class ArmorCombo
             AddArmor(armor);
     }
 
-    public double CalculateFinalMoveSpeed(IEnumerable<Armor> armorCombos)
+    public double CalculateFinalMoveSpeed()
     {
         int lowAgilityThreshold = 15;
         int mediumAgilityThreshold = 45;
@@ -46,7 +46,7 @@ public class ArmorCombo
         return moveSpeed;
     }
 
-    public string CalculateFinalActionSpeed(IEnumerable<Armor> armorCombos)
+    public string CalculateFinalActionSpeed()
     {
         int lowAgilityThreshold = 10;
         int mediumAgilityThreshold1 = 13;
@@ -98,6 +98,6 @@ public class ArmorCombo
         var newTotal = new Stats();
         foreach (var armors in Armors)
             newTotal += armors.JunkStats;
-        TotalStats = newTotal;
+        TotalStats = Character.BaseStats + newTotal;
     }
 }

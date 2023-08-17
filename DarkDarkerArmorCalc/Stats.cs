@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 namespace DarkDarkerArmorCalc;
 
 [JsonObject(NamingStrategyType = typeof(CamelCaseNamingStrategy))]
-public class Stats
+public struct Stats
 {
     public int ArmorRating { get; set; }
     public int MovementSpeed { get; set; }
@@ -16,8 +16,6 @@ public class Stats
     public int Resourcefulness { get; set; }
     public double HeadshotReduction { get; set; }
     public double ProjectileReduction { get; set; }
-
-    public Stats() { }
 
     public Stats(int armorRating,
         int movementSpeed,

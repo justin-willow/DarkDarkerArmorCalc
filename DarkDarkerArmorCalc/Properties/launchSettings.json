@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DarkDarkerArmorCalc": {
+      "commandName": "Project",
+      "commandLineArgs": "armorgraph"
+    }
+  }
+}
