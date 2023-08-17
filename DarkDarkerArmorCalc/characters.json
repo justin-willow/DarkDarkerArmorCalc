@@ -1,26 +1,32 @@
 [
   {
     "name": "Human",
-    "strength": 13,
-    "agility": 14,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
+    "baseStats": {
+      "strength": 13,
+      "agility": 14,
+      "will": 23,
+      "knowledge": 15,
+      "resourcefulness": 10
+    }
   },
   {
     "name": "Elf",
-    "strength": 12,
-    "agility": 15,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
+    "baseStats": {
+      "strength": 12,
+      "agility": 15,
+      "will": 23,
+      "knowledge": 15,
+      "resourcefulness": 10
+    }
   },
   {
     "name": "Orc",
-    "strength": 14,
-    "agility": 13,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
+    "baseStats": {
+      "strength": 14,
+      "agility": 13,
+      "will": 23,
+      "knowledge": 15,
+      "resourcefulness": 10
+    }
   }
 ]

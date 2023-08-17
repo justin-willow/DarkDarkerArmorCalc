@@ -14,8 +14,8 @@ if (string.IsNullOrEmpty(assemblyDirectory))
 var armorJson = File.ReadAllText(Path.Join(assemblyDirectory, "armors.json"));
 var armorList = JsonConvert.DeserializeObject<List<Armor>>(armorJson);
 
-var characterJson = File.ReadAllText(Path.Join(assemblyDirectory, "characters.json"));
-var characterList = JsonConvert.DeserializeObject<List<Character>>(characterJson);
+var classJson = File.ReadAllText(Path.Join(assemblyDirectory, "characters.json"));
+var characterList = JsonConvert.DeserializeObject<List<Character>>(classJson);
 
 if (armorList is null)
     throw new ApplicationException("unable to find armor.json source");

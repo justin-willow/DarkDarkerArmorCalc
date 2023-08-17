@@ -83,7 +83,7 @@ public class ArmorCombo
             actionSpeed += lowAgilityThreshold * 0.03 + (mediumAgilityThreshold1 - lowAgilityThreshold) * 0.02 + (mediumAgilityThreshold2 - mediumAgilityThreshold1) * 0.01 + (highAgilityThreshold1 - mediumAgilityThreshold2) * 0.015 + (highAgilityThreshold2 - highAgilityThreshold1) * 0.01 + (totalAgility - highAgilityThreshold2) * 0.005; // 50 to 100: 0.5% per point
         }
 
-        return $"{(actionSpeed * 100):0.##}%"; // Format as percentage string
+        return $"{actionSpeed * 100:0.##}%"; // Format as percentage string
     }
 
 
@@ -97,9 +97,7 @@ public class ArmorCombo
     {
         var newTotal = new Stats();
         foreach (var armors in Armors)
-        {
             newTotal += armors.JunkStats;
-        }
         TotalStats = newTotal;
     }
 }

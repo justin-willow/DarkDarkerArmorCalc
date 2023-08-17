@@ -9,6 +9,11 @@ public class Race
     public string Name { get; set; }
     public Stats StatModifier { get; set; }
 
+    public Race()
+    {
+        
+    }
+
     public Race(string name, Stats statMod)
     {
         Name = name;

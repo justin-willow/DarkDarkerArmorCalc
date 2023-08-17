@@ -10,6 +10,11 @@ public class Armor
     public ArmorSlot Slot { get; set; }
     public Stats JunkStats { get; set; }
 
+    public Armor()
+    {
+        
+    }
+
     public Armor(string name, ArmorSlot slot, Stats junkStats)
     {
         Name = name;

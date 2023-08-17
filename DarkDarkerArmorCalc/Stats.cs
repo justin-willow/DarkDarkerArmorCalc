@@ -15,6 +15,7 @@ public class Stats
     public int Strength { get; set; }
     public int Resourcefulness { get; set; }
     public double HeadshotReduction { get; set; }
+    public double ProjectileReduction { get; set; }
 
     public Stats() { }
 
@@ -26,7 +27,8 @@ public class Stats
         int knowledge,
         int strength,
         int resourcefulness,
-        double headshotReduction)
+        double headshotReduction,
+        double projectileReduction)
     {
         ArmorRating = armorRating;
         MovementSpeed = movementSpeed;
@@ -37,6 +39,7 @@ public class Stats
         Strength = strength;
         Resourcefulness = resourcefulness;
         HeadshotReduction = headshotReduction;
+        ProjectileReduction = projectileReduction;
     }
 
     public static Stats operator +(Stats a, Stats b)
@@ -50,7 +53,8 @@ public class Stats
             a.Knowledge + b.Knowledge,
             a.Strength + b.Strength,
             a.Resourcefulness + b.Resourcefulness,
-            a.HeadshotReduction + b.HeadshotReduction
+            a.HeadshotReduction + b.HeadshotReduction,
+            a.ProjectileReduction + b.ProjectileReduction
         );
     }
 
@@ -65,7 +69,8 @@ public class Stats
             a.Knowledge - b.Knowledge,
             a.Strength - b.Strength,
             a.Resourcefulness - b.Resourcefulness,
-            a.HeadshotReduction - b.HeadshotReduction
+            a.HeadshotReduction - b.HeadshotReduction,
+            a.ProjectileReduction - b.ProjectileReduction
         );
     }
 }
