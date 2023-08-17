@@ -2,6 +2,7 @@
   {
     "name": "No Head Armor",
     "slot": "HEAD",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 0,
       "movementSpeed": 0,
@@ -11,12 +12,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "No Chest Armor",
     "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 0,
       "movementSpeed": 0,
@@ -26,12 +29,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "No Hands Armor",
     "slot": "HANDS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 0,
       "movementSpeed": 0,
@@ -41,12 +46,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "No Legs Armor",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 0,
       "movementSpeed": 0,
@@ -56,12 +63,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "No Feet Armor",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 0,
       "movementSpeed": 0,
@@ -71,12 +80,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Adventurer Boots",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 6,
       "movementSpeed": 5,
@@ -86,12 +97,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Cloth Pants",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 8,
       "movementSpeed": -5,
@@ -101,12 +114,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Frock",
     "slot": "CHEST",
+    "allowedClasses": ["WIZARD", "WARLOCK", "CLERIC"],
     "junkStats": {
       "armorRating": 15,
       "movementSpeed": -5,
@@ -116,12 +131,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Leather Gloves",
     "slot": "HANDS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 3,
       "movementSpeed": 0,
@@ -131,12 +148,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Shadow Hood",
     "slot": "HEAD",
+    "allowedClasses": ["ROGUE", "WARLOCK"],
     "junkStats": {
       "armorRating": 16,
       "movementSpeed": -5,
@@ -146,12 +165,14 @@
       "knowledge": 0,
       "strength": 1,
       "resourcefulness": 0,
-      "headshotReduction": 0.06
+      "headshotReduction": 6.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Heavy Boots",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 10,
       "movementSpeed": 5,
@@ -161,12 +182,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Heavy Leather Leggings",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 19,
       "movementSpeed": -8,
@@ -176,12 +199,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Laced Turnshoe",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 5,
       "movementSpeed": 3,
@@ -191,12 +216,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Leather Leggings",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 15,
       "movementSpeed": -5,
@@ -206,12 +233,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Lightfoot Boots",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 5,
       "movementSpeed": 6,
@@ -221,12 +250,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Loose Trousers",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 5,
       "movementSpeed": -3,
@@ -236,12 +267,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Marauder Outfit",
     "slot": "CHEST",
+    "allowedClasses": ["ROGUE", "WARLOCK"],
     "junkStats": {
       "armorRating": 28,
       "movementSpeed": -10,
@@ -251,12 +284,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Mystic Vestments",
     "slot": "CHEST",
+    "allowedClasses": ["WIZARD", "WARLOCK", "CLERIC"],
     "junkStats": {
       "armorRating": 24,
       "movementSpeed": -5,
@@ -266,12 +301,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Old Shoes",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 2,
       "movementSpeed": 3,
@@ -281,12 +318,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Oracle Robe",
     "slot": "CHEST",
+    "allowedClasses": ["WIZARD", "WARLOCK", "CLERIC"],
     "junkStats": {
       "armorRating": 21,
       "movementSpeed": -5,
@@ -296,12 +335,14 @@
       "knowledge": 1,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Padded Leggings",
     "slot": "LEGS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 12,
       "movementSpeed": -5,
@@ -311,12 +352,14 @@
       "knowledge": 1,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Padded Tunic",
     "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 10,
       "movementSpeed": -5,
@@ -326,12 +369,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Regal Gambeson",
     "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 35,
       "movementSpeed": -10,
@@ -341,12 +386,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Reinforced Gloves",
     "slot": "HANDS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 6,
       "movementSpeed": 0,
@@ -356,12 +403,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Riveted Gloves",
     "slot": "HANDS",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 6,
       "movementSpeed": 0,
@@ -371,12 +420,14 @@
       "knowledge": 0,
       "strength": 1,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Rugged Boots",
     "slot": "FEET",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 6,
       "movementSpeed": 5,
@@ -386,12 +437,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Warden Outfit",
     "slot": "CHEST",
+    "allowedClasses": [ "RANGER", "WARLOCK" ],
     "junkStats": {
       "armorRating": 30,
       "movementSpeed": -10,
@@ -401,12 +454,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Adventurer Tunic",
     "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN", "BARD", "CLERIC", "DRUID", "FIGHTER", "RANGER", "ROGUE", "WARLOCK", "WIZARD" ],
     "junkStats": {
       "armorRating": 14,
       "movementSpeed": -5,
@@ -416,13 +471,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Occultist Robe",
     "slot": "CHEST",
-    "allowedClasses": [ "Warlock" ],
+    "allowedClasses": [ "WARLOCK" ],
     "junkStats": {
       "armorRating": 15,
       "movementSpeed": -5,
@@ -432,13 +488,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Occultist Tunic",
     "slot": "CHEST",
-    "allowedClasses": [ "Warlock" ],
+    "allowedClasses": [ "WARLOCK" ],
     "junkStats": {
       "armorRating": 35,
       "movementSpeed": -15,
@@ -448,13 +505,14 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
     "name": "Shadow Mask",
     "slot": "HEAD",
-    "allowedClasses": [ "Rogue", "Warlock" ],
+    "allowedClasses": [ "ROGUE", "WARLOCK" ],
     "junkStats": {
       "armorRating": 8,
       "movementSpeed": 0,
@@ -464,7 +522,518 @@
       "knowledge": 1,
       "strength": 1,
       "resourcefulness": 1,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Armet",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER" ],
+    "junkStats": {
+      "armorRating": 24,
+      "movementSpeed": -12,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 14.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Barbuta Helm",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -10,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Chapel De Fer",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -8,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 10.0,
+      "projectileReduction": 2.0
+    }
+  },
+  {
+    "name": "Chaperon",
+    "slot": "HEAD",
+    "allowedClasses": [ "CLERIC" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Dark Plate Armor",
+    "slot": "CHEST",
+    "allowedClasses": [ "FIGHTER" ],
+    "junkStats": {
+      "armorRating": 47,
+      "movementSpeed": -30,
+      "magicResistance": 40,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 15.0
+    }
+  },
+  {
+    "name": "Doublet",
+    "slot": "CHEST",
+    "allowedClasses": [ "RANGER", "ROGUE", "FIGHTER" ],
+    "junkStats": {
+      "armorRating": 17,
+      "movementSpeed": -8,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Fine Cuirass",
+    "slot": "CHEST",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 60,
+      "movementSpeed": -35,
+      "magicResistance": -10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 10.0
+    }
+  },
+  {
+    "name": "Gjermundbu",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 17,
+      "movementSpeed": -8,
+      "magicResistance": 15,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Heavy Gauntlet",
+    "slot": "HANDS",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "movementSpeed": -3,
+      "armorRating": 12,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Kettle Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -8,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 10.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Cap",
+    "slot": "HEAD",
+    "allowedClasses": [ "WIZARD", "RANGER", "ROGUE", "FIGHTER", "BARBARIAN", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 12,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 7.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Northern Full Tunic",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 43,
+      "movementSpeed": -15,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Plate Boots",
+    "slot": "FEET",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 13,
+      "movementSpeed": 2,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Plate Pants",
+    "slot": "LEGS",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 26,
+      "movementSpeed": -18,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Ranger Hood",
+    "slot": "HEAD",
+    "allowedClasses": [ "RANGER" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 4.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Rogue Cowl",
+    "slot": "HEAD",
+    "allowedClasses": [ "ROGUE" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 4.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Templar Armor",
+    "slot": "CHEST",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 45,
+      "movementSpeed": -15,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Viking Helmet",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -10,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 4.0
+    }
+  },
+  {
+    "name": "Visored Barbuta Helm",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER" ],
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -10,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 13.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wizard Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "WIZARD", "WARLOCK" ],
+    "junkStats": {
+      "armorRating": 5,
+      "movementSpeed": -5,
+      "magicResistance": 5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 2.5,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wizard Shoes",
+    "slot": "FEET",
+    "allowedClasses": [ "WIZARD", "WARLOCK" ],
+    "junkStats": {
+      "armorRating": 1,
+      "movementSpeed": 5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Bardic Pants",
+    "slot": "LEGS",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0,
+      "projectileReduction": 0
+    }
+  },
+  {
+    "name": "Feathered Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Forest Hood",
+    "slot": "HEAD",
+    "allowedClasses": [ "RANGER" ],
+    "junkStats": {
+      "armorRating": 12,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 6.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Hounskull",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 28,
+      "movementSpeed": -12,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 20.0,
+      "projectileReduction": 7.0
+    }
+  },
+  {
+    "name": "Leather Bonnet",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Chausses",
+    "slot": "LEGS",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Straw Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Troubadour Outfit",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wanderer Attire",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   }
 ]

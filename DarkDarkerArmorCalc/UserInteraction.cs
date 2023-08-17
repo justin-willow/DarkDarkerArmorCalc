@@ -25,4 +25,35 @@ public class UserInteraction
             AnsiConsole.Markup("[red]Invalid input.[/] Please answer with either '[bold]Y[/]' or '[bold]N[/]': ");
         }
     }
+    public static CharClass GetValidCharClass()
+    {
+        AnsiConsole.Markup("Enter your character class: ");
+        while (true)
+        {
+            if (Enum.TryParse(Console.ReadLine()?.Trim(), true, out CharClass userCharClass))
+            {
+                return userCharClass;
+            }
+            else
+            {
+                AnsiConsole.Markup("[red]Invalid input.[/] Please answer with a valid [bold]character class[/]: ");
+            }
+        }
+    }
+
+    public static double GetValidMinimumMoveSpeed()
+    {
+        AnsiConsole.Markup("Enter minimum move speed: ");
+        while (true)
+        {
+            if (double.TryParse(Console.ReadLine(), out double minimumMoveSpeed))
+            {
+                return minimumMoveSpeed;
+            }
+            else
+            {
+                AnsiConsole.Markup("[red]Invalid input.[/] Please answer with a valid [bold]minimum move speed[/]: ");
+            }
+        }
+    }
 }

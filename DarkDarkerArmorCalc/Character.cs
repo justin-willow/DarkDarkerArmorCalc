@@ -7,6 +7,7 @@ namespace DarkDarkerArmorCalc;
 public class Character
 {
     public string Name { get; set; }
+    public CharClass CharClass { get; set; }
     public int BaseMoveSpeed { get; } = 270;
     public Stats BaseStats { get; set; }
     public Race Race { get; set; }

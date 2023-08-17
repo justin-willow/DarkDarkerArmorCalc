@@ -9,16 +9,18 @@ public class Armor
     public string Name { get; set; }
     public ArmorSlot Slot { get; set; }
     public Stats JunkStats { get; set; }
+    public CharClass[] AllowedClasses { get; set; }
 
     public Armor()
     {
         
     }
 
-    public Armor(string name, ArmorSlot slot, Stats junkStats)
+    public Armor(string name, ArmorSlot slot, CharClass[] allowedClasses, Stats junkStats)
     {
         Name = name;
         Slot = slot;
+        AllowedClasses = allowedClasses;
         JunkStats = junkStats;
     }
 }
