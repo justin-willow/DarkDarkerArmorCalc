@@ -15,4 +15,5 @@ public class ArmorStats
     public int Strength { get; set; }
     public int Resourcefulness { get; set; }
     public double HeadshotReduction { get; set; }
+    public double ProjectileReduction { get; set; }
 }

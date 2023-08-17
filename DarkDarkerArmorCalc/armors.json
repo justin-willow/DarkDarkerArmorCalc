@@ -12,7 +12,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -28,7 +29,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -44,7 +46,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -60,7 +63,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -76,7 +80,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -92,7 +97,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -108,7 +114,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -124,7 +131,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -140,7 +148,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -156,7 +165,8 @@
       "knowledge": 0,
       "strength": 1,
       "resourcefulness": 0,
-      "headshotReduction": 0.06
+      "headshotReduction": 6.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -172,7 +182,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -188,7 +199,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -204,7 +216,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -220,7 +233,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -236,7 +250,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -252,7 +267,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -268,7 +284,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -284,7 +301,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -300,7 +318,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -316,7 +335,8 @@
       "knowledge": 1,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -332,7 +352,8 @@
       "knowledge": 1,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -348,7 +369,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -364,7 +386,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -380,7 +403,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -396,7 +420,8 @@
       "knowledge": 0,
       "strength": 1,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -412,7 +437,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -428,7 +454,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -444,7 +471,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -460,7 +488,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -476,7 +505,8 @@
       "knowledge": 0,
       "strength": 0,
       "resourcefulness": 0,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -492,7 +522,8 @@
       "knowledge": 1,
       "strength": 1,
       "resourcefulness": 1,
-      "headshotReduction": 0.0
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -503,7 +534,13 @@
       "armorRating": 24,
       "movementSpeed": -12,
       "magicResistance": -5,
-      "headshotReduction": 14.0
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 14.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -514,7 +551,13 @@
       "armorRating": 19,
       "movementSpeed": -10,
       "magicResistance": 10,
-      "headshotReduction": 12.0
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -525,7 +568,13 @@
       "armorRating": 15,
       "movementSpeed": -8,
       "magicResistance": 10,
-      "headshotReduction": 10.0
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 10.0,
+      "projectileReduction": 2.0
     }
   },
   {
@@ -536,7 +585,13 @@
       "armorRating": 4,
       "movementSpeed": -5,
       "magicResistance": 10,
-      "headshotReduction": 5.0
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
     }
   },
   {
@@ -547,27 +602,438 @@
       "armorRating": 47,
       "movementSpeed": -30,
       "magicResistance": 40,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
       "projectileReduction": 15.0
     }
   },
   {
-    "name": "Doublet Armor",
+    "name": "Doublet",
     "slot": "CHEST",
     "allowedClasses": [ "RANGER", "ROGUE", "FIGHTER" ],
     "junkStats": {
       "armorRating": 17,
-      "movementSpeed": -8
+      "movementSpeed": -8,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   },
   {
-    "name": "Fine Cuirass Armor",
+    "name": "Fine Cuirass",
     "slot": "CHEST",
     "allowedClasses": [ "FIGHTER", "CLERIC" ],
     "junkStats": {
       "armorRating": 60,
       "movementSpeed": -35,
       "magicResistance": -10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
       "projectileReduction": 10.0
+    }
+  },
+  {
+    "name": "Gjermundbu",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 17,
+      "movementSpeed": -8,
+      "magicResistance": 15,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Heavy Gauntlet",
+    "slot": "HANDS",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "movementSpeed": -3,
+      "armorRating": 12,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Kettle Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 15,
+      "movementSpeed": -8,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 10.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Cap",
+    "slot": "HEAD",
+    "allowedClasses": [ "WIZARD", "RANGER", "ROGUE", "FIGHTER", "BARBARIAN", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 12,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 7.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Northern Full Tunic",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 43,
+      "movementSpeed": -15,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Plate Boots",
+    "slot": "FEET",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 13,
+      "movementSpeed": 2,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Plate Pants",
+    "slot": "LEGS",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 26,
+      "movementSpeed": -18,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Ranger Hood",
+    "slot": "HEAD",
+    "allowedClasses": [ "RANGER" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 4.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Rogue Cowl",
+    "slot": "HEAD",
+    "allowedClasses": [ "ROGUE" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 4.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Templar Armor",
+    "slot": "CHEST",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 45,
+      "movementSpeed": -15,
+      "magicResistance": 20,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Viking Helmet",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARBARIAN" ],
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -10,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 12.0,
+      "projectileReduction": 4.0
+    }
+  },
+  {
+    "name": "Visored Barbuta Helm",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER" ],
+    "junkStats": {
+      "armorRating": 19,
+      "movementSpeed": -10,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 13.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wizard Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "WIZARD", "WARLOCK" ],
+    "junkStats": {
+      "armorRating": 5,
+      "movementSpeed": -5,
+      "magicResistance": 5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 2.5,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wizard Shoes",
+    "slot": "FEET",
+    "allowedClasses": [ "WIZARD", "WARLOCK" ],
+    "junkStats": {
+      "armorRating": 1,
+      "movementSpeed": 5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Bardic Pants",
+    "slot": "LEGS",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0,
+      "projectileReduction": 0
+    }
+  },
+  {
+    "name": "Feathered Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Forest Hood",
+    "slot": "HEAD",
+    "allowedClasses": [ "RANGER" ],
+    "junkStats": {
+      "armorRating": 12,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 1,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 6.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Hounskull",
+    "slot": "HEAD",
+    "allowedClasses": [ "FIGHTER", "CLERIC" ],
+    "junkStats": {
+      "armorRating": 28,
+      "movementSpeed": -12,
+      "magicResistance": -5,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 20.0,
+      "projectileReduction": 7.0
+    }
+  },
+  {
+    "name": "Leather Bonnet",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Leather Chausses",
+    "slot": "LEGS",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 8,
+      "movementSpeed": -5,
+      "magicResistance": 0,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Straw Hat",
+    "slot": "HEAD",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 4,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 5.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Troubadour Outfit",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
+    }
+  },
+  {
+    "name": "Wanderer Attire",
+    "slot": "CHEST",
+    "allowedClasses": [ "BARD" ],
+    "junkStats": {
+      "armorRating": 10,
+      "movementSpeed": -5,
+      "magicResistance": 10,
+      "agility": 0,
+      "will": 0,
+      "knowledge": 0,
+      "strength": 0,
+      "resourcefulness": 0,
+      "headshotReduction": 0.0,
+      "projectileReduction": 0.0
     }
   }
 ]

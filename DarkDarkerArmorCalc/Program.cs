@@ -25,12 +25,7 @@ if (characterList is null)
 
 List<ArmorCombo> validCombos = new();
 
-
-
-Console.Write("Enter your character class: ");
-string userInput = Console.ReadLine().Trim().ToUpper();
-Enum.TryParse(userInput, out CharClasses userCharClass);
-
+CharClasses userCharClass = UserInteraction.GetValidCharClass();
 
 var permutations = from head in armorList.Where(armor => armor.Slot == ArmorSlot.HEAD && armor.AllowedClasses.Contains(userCharClass))
                    from chest in armorList.Where(armor => armor.Slot == ArmorSlot.CHEST && armor.AllowedClasses.Contains(userCharClass))
@@ -38,7 +33,6 @@ var permutations = from head in armorList.Where(armor => armor.Slot == ArmorSlot
                    from legs in armorList.Where(armor => armor.Slot == ArmorSlot.LEGS && armor.AllowedClasses.Contains(userCharClass))
                    from feet in armorList.Where(armor => armor.Slot == ArmorSlot.FEET && armor.AllowedClasses.Contains(userCharClass))
                    select new Tuple<Armor, Armor, Armor, Armor, Armor>(head, chest, hand, legs, feet);
-
 
 foreach (var character in characterList)
 {
@@ -54,8 +48,7 @@ bool shouldContinue = true;
 
 while (shouldContinue)
 {
-    Console.Write("Enter minimum move speed: ");
-    _ = double.TryParse(Console.ReadLine(), out double minimumMoveSpeed);
+    double minimumMoveSpeed = UserInteraction.GetValidMinimumMoveSpeed();
 
     IEnumerable<Armor> distinctArmorList = validCombos
         .Select(combo => combo.Armor)
@@ -84,6 +77,8 @@ while (shouldContinue)
             .AddColumn("[bold]Total Resourcefulness[/]")
             .AddColumn("[bold]Total Armor Rating[/]")
             .AddColumn("[bold]Total Magic Resistance[/]")
+            .AddColumn("[bold]Headshot Reduction[/]")
+            .AddColumn("[bold]Projectile Reduction[/]")
             .AddColumn("[bold]Final Action Speed[/]")
             .AddColumn("[bold]Final Move Speed[/]");
 
@@ -97,6 +92,8 @@ while (shouldContinue)
             new Markup($"[blue]{combo.TotalResourcefulness}[/]"),
             new Markup($"[white]{combo.TotalArmorRating}[/]"),
             new Markup($"[red]{combo.TotalMagicResistance}[/]"),
+            new Markup($"[white]{combo.TotalHeadshotReduction.ToString("0.#")}%[/]"),
+            new Markup($"[white]{combo.TotalProjectileReduction.ToString("0.#")}%[/]"),
             new Markup($"[magenta]{finalActionSpeed}[/]"),
             new Markup($"[green]{finalMoveSpeed}[/]")
         );
@@ -105,7 +102,6 @@ while (shouldContinue)
     }
     shouldContinue = UserInteraction.ContinueChecker();
 }
-
 static string BuildArmorComboString(ArmorCombo combo)
 {
     StringBuilder sb = new(500);
