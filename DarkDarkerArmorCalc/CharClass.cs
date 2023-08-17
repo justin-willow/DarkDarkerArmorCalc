@@ -4,7 +4,7 @@ using Newtonsoft.Json.Converters;
 namespace DarkDarkerArmorCalc;
 
 [JsonConverter(typeof(StringEnumConverter))]
-public enum CharClasses
+public enum CharClass
 {
     BARBARIAN,
     BARD,

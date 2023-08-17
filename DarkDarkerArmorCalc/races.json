@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Elf",
+    "statModifier": {
+      "agility": 1,
+      "strength": -1
+    }
+  },
+  {
+    "name": "Orc",
+    "statModifier": {
+      "agility": -1,
+      "strength": 1
+    }
+  },
+  {
+    "name": "Human"
+  }
+]

@@ -1,38 +1,82 @@
 [
   {
-    "name": "Human",
     "charclass": "WARLOCK",
-    "strength": 13,
-    "agility": 14,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
+    "baseStats": {
+      "strength": 13,
+      "agility": 14,
+      "will": 23,
+      "knowledge": 15,
+      "resourcefulness": 10
+    }
   },
   {
-    "name": "Elf",
-    "charclass": "WARLOCK",
-    "strength": 12,
-    "agility": 15,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
-  },
-  {
-    "name": "Orc",
-    "charclass": "WARLOCK",
-    "strength": 14,
-    "agility": 13,
-    "will": 23,
-    "knowledge": 15,
-    "resourcefulness": 10
-  },
-  {
-    "name": "Human",
     "charclass": "FIGHTER",
-    "strength": 15,
-    "agility": 15,
-    "will": 15,
-    "knowledge": 15,
-    "resourcefulness": 15
+    "baseStats": {
+      "strength": 15,
+      "agility": 15,
+      "will": 15,
+      "knowledge": 15,
+      "resourcefulness": 15
+    }
+  },
+  {
+    "charclass": "ROGUE",
+    "baseStats": {
+      "strength": 8,
+      "agility": 35,
+      "will": 5,
+      "knowledge": 12,
+      "resourcefulness": 15
+    }
+  },
+  {
+    "charclass": "RANGER",
+    "baseStats": {
+      "strength": 10,
+      "agility": 20,
+      "will": 10,
+      "knowledge": 10,
+      "resourcefulness": 25
+    }
+  },
+  {
+    "charclass": "BARBARIAN",
+    "baseStats": {
+      "strength": 30,
+      "agility": 11,
+      "will": 18,
+      "knowledge": 6,
+      "resourcefulness": 10
+    }
+  },
+  {
+    "charclass": "WIZARD",
+    "baseStats": {
+      "strength": 5,
+      "agility": 20,
+      "will": 33,
+      "knowledge": 12,
+      "resourcefulness": 5
+    }
+  },
+  {
+    "charclass": "BARD",
+    "baseStats": {
+      "strength": 15,
+      "agility": 20,
+      "will": 10,
+      "knowledge": 18,
+      "resourcefulness": 12
+    }
+  },
+  {
+    "charclass": "CLERIC",
+    "baseStats": {
+      "strength": 13,
+      "agility": 11,
+      "will": 30,
+      "knowledge": 12,
+      "resourcefulness": 8
+    }
   }
 ]

@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace DarkDarkerArmorCalc;
 
@@ -9,14 +8,19 @@ public class Armor
 {
     public string Name { get; set; }
     public ArmorSlot Slot { get; set; }
-    public CharClasses[] AllowedClasses { get; set; }
-    public ArmorStats JunkStats { get; set; }
+    public Stats JunkStats { get; set; }
+    public CharClass[] AllowedClasses { get; set; }
 
-    public Armor(string name, ArmorSlot slot, CharClasses[] allowedClasses, ArmorStats junkStats)
+    public Armor()
     {
-        this.Name = name;
-        this.Slot = slot;
-        this.AllowedClasses = allowedClasses;
-        this.JunkStats = junkStats;
+        
+    }
+
+    public Armor(string name, ArmorSlot slot, CharClass[] allowedClasses, Stats junkStats)
+    {
+        Name = name;
+        Slot = slot;
+        AllowedClasses = allowedClasses;
+        JunkStats = junkStats;
     }
 }

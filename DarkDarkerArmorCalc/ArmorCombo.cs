@@ -1,33 +1,19 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace DarkDarkerArmorCalc;
+﻿namespace DarkDarkerArmorCalc;
 
 public class ArmorCombo
 {
-    public Armor Armor { get; }
     public Character Character { get; }
-    public int TotalArmorRating { get; private set; }
-    public int TotalMagicResistance { get; private set; }
-    public int TotalStrength { get; private set; }
-    public int TotalAgility { get; private set; }
-    public int TotalWill { get; private set; }
-    public int TotalKnowledge { get; private set; }
-    public int TotalResourcefulness { get; private set; }
-    public int TotalMoveSpeedPenalty { get; private set; }
-    public double TotalHeadshotReduction { get; private set; }
-    public double TotalProjectileReduction { get; private set; }
-
+    public Stats TotalStats { get; private set; } = new Stats();
     public List<Armor> Armors { get; } = new List<Armor>();
 
     public ArmorCombo(IEnumerable<Armor> armors, Character character)
     {
-        this.Character = character;
+        Character = character;
         foreach (var armor in armors)
             AddArmor(armor);
     }
 
-    public double CalculateFinalMoveSpeed(IEnumerable<Armor> armorCombos)
+    public double CalculateFinalMoveSpeed()
     {
         int lowAgilityThreshold = 15;
         int mediumAgilityThreshold = 45;
@@ -35,7 +21,7 @@ public class ArmorCombo
 
         double moveSpeed = Character.BaseMoveSpeed; // Default move speed is 270
 
-        int totalAgility = TotalAgility;
+        int totalAgility = TotalStats.Agility;
 
 
         if (totalAgility >= 0 && totalAgility <= lowAgilityThreshold)
@@ -55,12 +41,12 @@ public class ArmorCombo
             moveSpeed += lowAgilityThreshold * 2 + (mediumAgilityThreshold - lowAgilityThreshold) + ((highAgilityThreshold - mediumAgilityThreshold) * 0.5) + ((totalAgility - highAgilityThreshold) * 0.33); // 65 to 100: 0.33 per point
         }
 
-        moveSpeed += TotalMoveSpeedPenalty;
+        moveSpeed += TotalStats.MovementSpeed;
 
         return moveSpeed;
     }
 
-    public string CalculateFinalActionSpeed(IEnumerable<Armor> armorCombos)
+    public string CalculateFinalActionSpeed()
     {
         int lowAgilityThreshold = 10;
         int mediumAgilityThreshold1 = 13;
@@ -70,7 +56,7 @@ public class ArmorCombo
 
         double actionSpeed = -0.38; // Default action speed penalty at 0 agility
 
-        int totalAgility = TotalAgility;
+        int totalAgility = TotalStats.Agility;
 
         if (totalAgility <= lowAgilityThreshold)
         {
@@ -97,7 +83,7 @@ public class ArmorCombo
             actionSpeed += lowAgilityThreshold * 0.03 + (mediumAgilityThreshold1 - lowAgilityThreshold) * 0.02 + (mediumAgilityThreshold2 - mediumAgilityThreshold1) * 0.01 + (highAgilityThreshold1 - mediumAgilityThreshold2) * 0.015 + (highAgilityThreshold2 - highAgilityThreshold1) * 0.01 + (totalAgility - highAgilityThreshold2) * 0.005; // 50 to 100: 0.5% per point
         }
 
-        return $"{(actionSpeed * 100):0.##}%"; // Format as percentage string
+        return $"{actionSpeed * 100:0.##}%"; // Format as percentage string
     }
 
 
@@ -109,15 +95,9 @@ public class ArmorCombo
 
     private void UpdateTotalProperties()
     {
-        TotalArmorRating = Armors.Sum(armor => armor.JunkStats.ArmorRating);
-        TotalMagicResistance = Armors.Sum(armor => armor.JunkStats.MagicResistance);
-        TotalStrength = Armors.Sum(armor => armor.JunkStats.Strength) + Character.Strength;
-        TotalAgility = Armors.Sum(armor => armor.JunkStats.Agility) + Character.Agility;
-        TotalWill = Armors.Sum(armor => armor.JunkStats.Will) + Character.Will;
-        TotalKnowledge = Armors.Sum(armor => armor.JunkStats.Knowledge) + Character.Knowledge;
-        TotalResourcefulness = Armors.Sum(armor => armor.JunkStats.Resourcefulness) + Character.Resourcefulness;
-        TotalMoveSpeedPenalty = Armors.Sum(armor => armor.JunkStats.MovementSpeed);
-        TotalHeadshotReduction = Armors.Sum(armor => armor.JunkStats.HeadshotReduction);
-        TotalProjectileReduction = Armors.Sum(armor => armor.JunkStats.ProjectileReduction);
+        var newTotal = new Stats();
+        foreach (var armors in Armors)
+            newTotal += armors.JunkStats;
+        TotalStats = Character.BaseStats + newTotal;
     }
 }
