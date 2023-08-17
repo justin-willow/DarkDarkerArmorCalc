@@ -50,15 +50,15 @@ while (shouldContinue)
     _ = double.TryParse(Console.ReadLine(), out double minimumMoveSpeed);
 
     IEnumerable<Armor> distinctArmorList = validCombos
-        .Select(combo => combo.Armor)
+        .SelectMany(combo => combo.Armors)
         .Distinct();
 
     IEnumerable<ArmorCombo> filteredCombos = validCombos
         .Where(combo => combo.CalculateFinalMoveSpeed(distinctArmorList) >= minimumMoveSpeed);
 
     IEnumerable<ArmorCombo> sortedCombos = filteredCombos
-        .OrderByDescending(combo => combo.TotalArmorRating)
-        .ThenByDescending(combo => combo.TotalStrength)
+        .OrderByDescending(combo => combo.TotalStats.ArmorRating)
+        .ThenByDescending(combo => combo.TotalStats.Strength)
         .Take(20);
 
     foreach (var combo in sortedCombos)
@@ -82,13 +82,13 @@ while (shouldContinue)
         table.AddRow(
             new Markup($"[deepskyblue2]{BuildArmorComboString(combo)}[/]"),
             new Markup($"[wheat1]{combo.Character.Name}[/]"),
-            new Markup($"[green]{combo.TotalAgility}[/]"),
-            new Markup($"[green]{combo.TotalStrength}[/]"),
-            new Markup($"[magenta]{combo.TotalWill}[/]"),
-            new Markup($"[yellow]{combo.TotalKnowledge}[/]"),
-            new Markup($"[blue]{combo.TotalResourcefulness}[/]"),
-            new Markup($"[white]{combo.TotalArmorRating}[/]"),
-            new Markup($"[red]{combo.TotalMagicResistance}[/]"),
+            new Markup($"[green]{combo.TotalStats.Agility}[/]"),
+            new Markup($"[green]{combo.TotalStats.Strength}[/]"),
+            new Markup($"[magenta]{combo.TotalStats.Will}[/]"),
+            new Markup($"[yellow]{combo.TotalStats.Knowledge}[/]"),
+            new Markup($"[blue]{combo.TotalStats.Resourcefulness}[/]"),
+            new Markup($"[white]{combo.TotalStats.ArmorRating}[/]"),
+            new Markup($"[red]{combo.TotalStats.MagicResistance}[/]"),
             new Markup($"[magenta]{finalActionSpeed}[/]"),
             new Markup($"[green]{finalMoveSpeed}[/]")
         );

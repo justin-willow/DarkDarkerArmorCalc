@@ -7,11 +7,11 @@ public class UserInteraction
     public static bool ContinueChecker()
     {
         AnsiConsole.Markup("[bold]Would you like to continue? (Y/N): [/]");
-        string userInput;
+        string? userInput;
 
         while (true)
         {
-            userInput = Console.ReadLine().Trim().ToLower();
+            userInput = Console.ReadLine()?.Trim()?.ToLower();
 
             if (userInput == "y")
             {

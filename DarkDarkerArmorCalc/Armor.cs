@@ -8,12 +8,12 @@ public class Armor
 {
     public string Name { get; set; }
     public ArmorSlot Slot { get; set; }
-    public ArmorStats JunkStats { get; set; }
+    public Stats JunkStats { get; set; }
 
-    public Armor(string name, ArmorSlot slot, ArmorStats junkStats)
+    public Armor(string name, ArmorSlot slot, Stats junkStats)
     {
-        this.Name = name;
-        this.Slot = slot;
-        this.JunkStats = junkStats;
+        Name = name;
+        Slot = slot;
+        JunkStats = junkStats;
     }
 }
