@@ -39,7 +39,6 @@ public struct Stats
         HeadshotReduction = headshotReduction;
         ProjectileReduction = projectileReduction;
     }
-
     public static Stats operator +(Stats a, Stats b)
     {
         return new(
@@ -55,7 +54,6 @@ public struct Stats
             a.ProjectileReduction + b.ProjectileReduction
         );
     }
-
     public static Stats operator -(Stats a, Stats b)
     {
         return new(

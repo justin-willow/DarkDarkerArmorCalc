@@ -15,7 +15,6 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
     public class Settings : CommandSettings
     {
     }
-
     public ArmorCalculatorCommand(CharacterRepository characterRepository,
         RaceRepository raceRepository,
         ArmorRepository armorRepository)
@@ -27,7 +26,6 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
         this.armorRepository = armorRepository
             ?? throw new ArgumentNullException(nameof(armorRepository));
     }
-
     public override int Execute([NotNull] CommandContext context, [NotNull] Settings settings)
     {
         AnsiConsole.Write(new FigletText("Dark and Darker Armor Calc").LeftJustified().Color(Color.Red));
@@ -67,7 +65,7 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
                 .Where(combo => combo.CalculateFinalMoveSpeed() >= minimumMoveSpeed);
 
             IEnumerable<ArmorCombo> sortedCombos = filteredCombos
-                .OrderByDescending(combo => combo.TotalStats.ArmorRating)
+                .OrderByDescending(combo => combo.CalculateEffectiveHitPoints())
                 .ThenByDescending(combo => combo.TotalStats.Strength)
                 .Take(20);
 
@@ -75,6 +73,7 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
             {
                 double finalMoveSpeed = combo.CalculateFinalMoveSpeed();
                 string finalActionSpeed = combo.CalculateFinalActionSpeed();
+                double finalEHP = combo.CalculateEffectiveHitPoints();
 
                 var table = new Table().Border(TableBorder.AsciiDoubleHead)
                     .AddColumn("[bold]Armor Combo[/]", (config) => config.NoWrap = true)
@@ -88,6 +87,7 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
                     .AddColumn("[bold]Total Magic Resistance[/]")
                     .AddColumn("[bold]Headshot Reduction[/]")
                     .AddColumn("[bold]Projectile Reduction[/]")
+                    .AddColumn("[bold]Effective HP[/]")
                     .AddColumn("[bold]Final Action Speed[/]")
                     .AddColumn("[bold]Final Move Speed[/]");
 
@@ -103,6 +103,7 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
                     new Markup($"[red]{combo.TotalStats.MagicResistance}[/]"),
                     new Markup($"[white]{combo.TotalStats.HeadshotReduction:0.#}%[/]"),
                     new Markup($"[white]{combo.TotalStats.ProjectileReduction:0.#}%[/]"),
+                    new Markup($"[red]{finalEHP:0.##}[/]"),
                     new Markup($"[magenta]{finalActionSpeed}[/]"),
                     new Markup($"[green]{finalMoveSpeed}[/]")
                 );
@@ -114,7 +115,6 @@ internal class ArmorCalculatorCommand : Command<ArmorCalculatorCommand.Settings>
 
         return 0;
     }
-
     static string BuildArmorComboString(ArmorCombo combo)
     {
         StringBuilder sb = new(500);

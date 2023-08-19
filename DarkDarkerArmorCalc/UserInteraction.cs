@@ -1,4 +1,5 @@
 ﻿using Spectre.Console;
+using System.Text.RegularExpressions;
 
 namespace DarkDarkerArmorCalc;
 
@@ -42,17 +43,25 @@ public class UserInteraction
         AnsiConsole.Markup("Enter your character class: ");
         while (true)
         {
-            if (Enum.TryParse(Console.ReadLine()?.Trim(), true, out CharClass userCharClass))
-            {
-                return userCharClass;
-            }
-            else
+            string userInput = Console.ReadLine()?.Trim();
+
+            if (string.IsNullOrWhiteSpace(userInput))
             {
                 AnsiConsole.Markup("[red]Invalid input.[/] Please answer with a valid [bold]character class[/]: ");
+                continue;
             }
+
+            if (Regex.IsMatch(userInput, @"^[A-Za-z]+$"))
+            {
+                if (Enum.TryParse(userInput, true, out CharClass userCharClass))
+                {
+                    return userCharClass;
+                }
+            }
+
+            AnsiConsole.Markup("[red]Invalid input.[/] Please answer with a valid [bold]character class[/]: ");
         }
     }
-
     public static double GetValidMinimumMoveSpeed()
     {
         AnsiConsole.Markup("Enter minimum move speed: ");
