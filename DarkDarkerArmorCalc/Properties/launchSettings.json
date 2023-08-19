@@ -2,7 +2,7 @@
   "profiles": {
     "DarkDarkerArmorCalc": {
       "commandName": "Project",
-      "commandLineArgs": "armorgraph"
+      "commandLineArgs": "armorcalc"
     }
   }
 }

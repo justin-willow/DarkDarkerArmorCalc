@@ -15,7 +15,6 @@ public class Armor
     {
         
     }
-
     public Armor(string name, ArmorSlot slot, CharClass[] allowedClasses, Stats junkStats)
     {
         Name = name;

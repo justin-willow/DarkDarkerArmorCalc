@@ -15,7 +15,6 @@ public class Character
     {
 
     }
-
     public Character(Character character, Race race)
     {
         Race = race;
@@ -23,7 +22,6 @@ public class Character
         BaseMoveSpeed = character.BaseMoveSpeed;
         BaseStats = character.BaseStats + Race.StatModifier;
     }
-
     public Character(Race race, Stats stats)
     {
         Race = race;
